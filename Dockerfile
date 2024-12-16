@@ -6,4 +6,4 @@ RUN unzip inance.zip
 RUN cp -rvf inance/* .
 RUN rm -rf inance inance.zip
 CMD ["apache2ctl", "-D", "FOREGROUND"]
-EXPOSE 80 
+EXPOSE 80 22 
