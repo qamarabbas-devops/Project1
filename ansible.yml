@@ -3,7 +3,7 @@
   become: yes
   tasks:
     - name: Create new deployment 
-      command: kubectl apply -f /root/deployment.yml
+      command: kubectl apply -f /root/deployment.yml --validate=false
       register: result
       environment:
         KUBCONFIG: /root/.kube/config
